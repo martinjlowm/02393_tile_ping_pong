@@ -26,3 +26,11 @@
 *.exe
 *.out
 *.app
+
+# Xcode project files
+enigma3d.app
+enigma3d.xcodeproj
+
+# Visual studio files
+game_framework.sin
+irrlicht-1.8.1/*
