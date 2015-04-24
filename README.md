@@ -33,3 +33,9 @@ to use the `framework` folder instead of `game_framework`, like so
     Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "game_framework", "framework\game_framework.vcxproj", "{B8C1C195-DAFB-40A1-8F04-E4DEDDF1173A}"
 </pre>
 
+
+# Development
+
+Development is done on the field 29, which is located in `T29.cpp` and `T29.h`. Only these two code files are allowed to be altered!
+
+Furthermore, there is a file containing the information for the levels, located in `enigma3d.app/Contents/Resources/field.lvl` in root of the folder, if you have Xcode.
