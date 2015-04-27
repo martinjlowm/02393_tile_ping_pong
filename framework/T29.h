@@ -36,7 +36,7 @@ class T29 : public Floor {
   void sphereExit(Sphere &s);
   void handleSphere(Sphere &s, position2di mousemove, f32 frameDeltaTime);
   fieldtype getFieldType();
-}
+};
 
 
 #endif

@@ -70,7 +70,7 @@ void T29::sphereExit(Sphere &sphere) {
 
   // Allow just enough time before activating, so the player sees the
   // texture change on the field.
-  if (timeSpentOnField > 0.1f) {
+  if (timeSpentOnField > 0.05f) {
     // Set the position coordinates to an introduced field or to the
     // bottom left if such doesn't exist.
     vector3df position = sphere.getPosition();
@@ -87,7 +87,7 @@ void T29::sphereExit(Sphere &sphere) {
   }
 
   timeSpentOnField = 0.f;
-  speedIncrease = 0.f;
+  speedIncrease = 1.f;
 };
 
 
@@ -104,7 +104,7 @@ void T29::handleSphere(Sphere &sphere, position2di mousemove, f32 frameDeltaTime
 
   // Increase the speed factor while the sphere is on the field.
   if (speedIncrease <= 25.f) {
-    speedIncrease += 0.1f;
+    speedIncrease += 0.05f;
   }
 
   // Continue the progress of the sphere, using the standard method
