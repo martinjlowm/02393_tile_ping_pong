@@ -65,15 +65,12 @@ void T29::sphereEnter(Sphere &sphere) {
  * @param Sphere the sphere object that has entered the floor tile
  */
 void T29::sphereExit(Sphere &sphere) {
-  // Change the texture
+  // Change the texture.
   block->setMaterialTexture(0, texture);
 
-  // Allow just enough time before activating, so the player sees the texture
-  // change on the field
+  // Allow just enough time before activating, so the player sees the
+  // texture change on the field.
   if (timeSpentOnField > 0.1f) {
-    // Reset the counter
-    timeSpentOnField = 0.f;
-
     // Set the position coordinates to an introduced field or to the
     // bottom left if such doesn't exist.
     vector3df position = sphere.getPosition();
@@ -95,9 +92,8 @@ void T29::sphereExit(Sphere &sphere) {
 
 
 /**
- * Count the time the sphere is touching the floor field, and if enough,
- * teleport the sphere by changing its coordinates to a fixed point on the
- * playground. Furthermore, a small velocity boost is added to the sphere.
+ * Count the time the sphere is touching the floor field and increase
+ * the speed factor.
  *
  * @param Sphere      the sphere object that has entered the floor tile
  * @param position2di the position of the mouse
@@ -125,7 +121,7 @@ fieldtype T29::getFieldType() {
 
 
 /**
- * @return the unique field type for field T29
+ * Store the teleport destination field.
  */
 void T29::introduceTo(Field &f) {
   if (!targetField) {
