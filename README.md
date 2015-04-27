@@ -1,3 +1,7 @@
+# T29: Shooting Teleporter
+This floor tile registers when the sphere is upon it, and after a set time it teleports the sphere (changes its position coordinates) to a fixed point on the playground. It also adds a speed boost to the sphere.
+
+
 # Motivation
 
 Each group is supposed to create their own level for the enigma3d game. This is done by designing your own floor/wall tile, and its special function (like teleporting the sphere), along with putting the tile into specific places on the level, by altering the `field.lvl` file.
